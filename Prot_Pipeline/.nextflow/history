@@ -1,0 +1,14 @@
+2024-08-02 22:38:19	-	cranky_davinci	-	1a051f34645e356325a96a4e1558457f	73aec04d-f903-41f7-b836-6939ba01d2be	nextflow run main.nf
+2024-08-02 22:40:10	4.8s	curious_planck	ERR	b0a9f15502cedd4cdfb26ebb0ce49ad3	8fb5f365-6dcd-45be-8fff-3109c61cd194	nextflow run main.nf
+2024-08-02 22:45:04	7.1s	thirsty_wiles	ERR	5d9977a6bdfb6c1ed020818532188184	898b7d98-9b83-4740-82ea-b416923a2f98	nextflow run main.nf
+2024-08-02 22:50:04	4s	clever_brazil	ERR	5d9977a6bdfb6c1ed020818532188184	d6604791-9a3b-4357-a071-a7ce7a54cb04	nextflow run main.nf
+2024-08-03 13:38:50	-	agitated_heyrovsky	-	e5632ec4b004bf16ac3c483fd3ddf79c	b86555d4-778d-4614-9705-5dde024cfe49	nextflow run main.nf
+2024-08-03 13:39:17	-	intergalactic_brenner	-	e5632ec4b004bf16ac3c483fd3ddf79c	6da0590a-cc92-4944-8e62-e7fe0db8616f	nextflow run main.nf
+2024-08-03 13:40:38	-	stoic_wiles	-	96cbde25cb44b8ce27b51103c85ab357	1506471b-fa6e-4282-9a9d-228be473bcdc	nextflow run main.nf
+2024-08-03 14:27:36	-	drunk_davinci	-	8c2ad70a4165d98a37a5a94d8cb127e4	b9e6bf4a-2424-4599-9bf8-d8301650c720	nextflow run main.nf
+2024-08-03 14:28:00	-	thirsty_shannon	-	8c2ad70a4165d98a37a5a94d8cb127e4	270904e9-1c94-43c0-963b-65a1ee5cb7e0	nextflow run main.nf
+2024-08-03 14:28:29	3s	confident_dijkstra	ERR	6f78aeee152518187368bb8a9770e987	b755cc54-055d-4c50-85e7-399913f5f048	nextflow run main.nf
+2024-08-03 14:32:55	4.5s	condescending_pesquet	ERR	48c624e4085b1869d99463862a492127	c6ddc198-5b76-4a59-a1d4-e4e36ad09e9e	nextflow run main.nf
+2024-08-03 14:38:23	-	infallible_kare	-	21f6e815dbe24fe8a10fa4a8e53d46fe	f7f2e582-9d3b-4e37-aa2c-e1ef66559a9b	nextflow run main.nf
+2024-08-03 14:40:51	-	nostalgic_fermi	-	21f6e815dbe24fe8a10fa4a8e53d46fe	90862a1c-369b-4cd0-99bc-0d0f846bec7c	nextflow run main.nf
+2024-08-03 14:41:14	3.5s	nasty_sax	OK	e9ae6a7404e732259164e08fbed4d672	4f56a5c1-a414-4688-ab6d-7338840e082b	nextflow run main.nf

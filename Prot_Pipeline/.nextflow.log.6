@@ -1,0 +1,61 @@
+Aug-03 14:27:35.808 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Aug-03 14:27:36.090 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Aug-03 14:27:36.175 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/gitpod/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Aug-03 14:27:36.185 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-03 14:27:36.186 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-03 14:27:36.189 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Aug-03 14:27:36.270 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-03 14:27:36.470 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Aug-03 14:27:36.488 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [drunk_davinci] DSL2 - revision: 8c2ad70a41
+Aug-03 14:27:36.490 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-03 14:27:36.491 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-03 14:27:36.770 [main] DEBUG nextflow.Session - Session UUID: b9e6bf4a-2424-4599-9bf8-d8301650c720
+Aug-03 14:27:36.771 [main] DEBUG nextflow.Session - Run name: drunk_davinci
+Aug-03 14:27:36.771 [main] DEBUG nextflow.Session - Executor pool size: 16
+Aug-03 14:27:36.782 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-03 14:27:36.791 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-03 14:27:36.893 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC 
+  System: Linux 6.1.91-060191-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.23+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 9530@daleor0917-protpipeline-op6d5or758g [127.0.0.1]
+  CPUs: 16 - Mem: 62.8 GB (25.9 GB) - Swap: 375 GB (374.9 GB)
+Aug-03 14:27:36.988 [main] DEBUG nextflow.Session - Work-dir: /workspace/Prot_Pipeline/Prot_Pipeline/work [xfs]
+Aug-03 14:27:36.988 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspace/Prot_Pipeline/Prot_Pipeline/bin
+Aug-03 14:27:37.076 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-03 14:27:37.094 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-03 14:27:37.190 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-03 14:27:37.205 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Aug-03 14:27:37.404 [main] DEBUG nextflow.Session - Session start
+Aug-03 14:27:38.992 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-03 14:27:39.080 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/gitpod/.nextflow/secrets/store.json
+Aug-03 14:27:39.090 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@588545ac] - activable => nextflow.secret.LocalSecretsProvider@588545ac
+Aug-03 14:27:39.096 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_01fa94ee63396bbb: /workspace/Prot_Pipeline/Prot_Pipeline/main.nf
+Aug-03 14:27:39.099 [main] DEBUG nextflow.Session - Session aborted -- Cause: No such property: dsl2 for class: nextflow.NextflowMeta$Features
+Possible solutions: dsl
+Aug-03 14:27:39.169 [main] ERROR nextflow.cli.Launcher - @unknown
+groovy.lang.MissingPropertyException: No such property: dsl2 for class: nextflow.NextflowMeta$Features
+Possible solutions: dsl
+	at nextflow.NextflowMeta$Features.propertyMissing(NextflowMeta.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaClassImpl.invokeMissingProperty(MetaClassImpl.java:850)
+	at groovy.lang.MetaClassImpl$11.getProperty(MetaClassImpl.java:2170)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_01fa94ee63396bbb.runScript(Script_01fa94ee63396bbb:3)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:159)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:209)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:243)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:138)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:503)
+	at nextflow.cli.Launcher.main(Launcher.groovy:657)

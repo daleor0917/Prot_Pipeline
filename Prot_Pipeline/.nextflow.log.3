@@ -1,0 +1,92 @@
+Aug-03 14:32:53.995 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Aug-03 14:32:54.277 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.04.4
+Aug-03 14:32:54.300 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/gitpod/.nextflow/plugins; core-plugins: nf-amazon@2.5.3,nf-azure@1.6.1,nf-cloudcache@0.4.1,nf-codecommit@0.2.1,nf-console@1.1.3,nf-ga4gh@1.3.0,nf-google@1.13.2-patch1,nf-tower@1.9.1,nf-wave@1.4.2-patch1
+Aug-03 14:32:54.377 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Aug-03 14:32:54.378 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Aug-03 14:32:54.382 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Aug-03 14:32:54.397 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Aug-03 14:32:54.596 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Aug-03 14:32:54.684 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [condescending_pesquet] DSL2 - revision: 48c624e408
+Aug-03 14:32:54.687 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Aug-03 14:32:54.687 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Aug-03 14:32:54.893 [main] DEBUG nextflow.Session - Session UUID: c6ddc198-5b76-4a59-a1d4-e4e36ad09e9e
+Aug-03 14:32:54.894 [main] DEBUG nextflow.Session - Run name: condescending_pesquet
+Aug-03 14:32:54.894 [main] DEBUG nextflow.Session - Executor pool size: 16
+Aug-03 14:32:54.976 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Aug-03 14:32:54.985 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-03 14:32:55.091 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.04.4 build 5917
+  Created: 01-08-2024 07:05 UTC 
+  System: Linux 6.1.91-060191-generic
+  Runtime: Groovy 4.0.21 on OpenJDK 64-Bit Server VM 11.0.23+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 10464@daleor0917-protpipeline-op6d5or758g [127.0.0.1]
+  CPUs: 16 - Mem: 62.8 GB (26.7 GB) - Swap: 375 GB (374.9 GB)
+Aug-03 14:32:55.191 [main] DEBUG nextflow.Session - Work-dir: /workspace/Prot_Pipeline/Prot_Pipeline/work [xfs]
+Aug-03 14:32:55.192 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspace/Prot_Pipeline/Prot_Pipeline/bin
+Aug-03 14:32:55.284 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Aug-03 14:32:55.373 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Aug-03 14:32:55.480 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Aug-03 14:32:55.493 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Aug-03 14:32:55.697 [main] DEBUG nextflow.Session - Session start
+Aug-03 14:32:57.184 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Aug-03 14:32:57.274 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/gitpod/.nextflow/secrets/store.json
+Aug-03 14:32:57.284 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5d318e91] - activable => nextflow.secret.LocalSecretsProvider@5d318e91
+Aug-03 14:32:57.394 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Aug-03 14:32:57.394 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Aug-03 14:32:57.402 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Aug-03 14:32:57.408 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=62.8 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Aug-03 14:32:57.472 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Aug-03 14:32:57.974 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: buildDockerImage
+Aug-03 14:32:57.975 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Aug-03 14:32:57.976 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > buildDockerImage
+Aug-03 14:32:57.978 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_ac9dea6a3bb68a7a: /workspace/Prot_Pipeline/Prot_Pipeline/main.nf
+Aug-03 14:32:57.978 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Aug-03 14:32:57.978 [main] DEBUG nextflow.Session - Session await
+Aug-03 14:32:58.703 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Aug-03 14:32:58.770 [Task submitter] INFO  nextflow.Session - [e4/ba4a2a] Submitted process > buildDockerImage
+Aug-03 14:32:59.068 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: buildDockerImage; status: COMPLETED; exit: 1; error: -; workDir: /workspace/Prot_Pipeline/Prot_Pipeline/work/e4/ba4a2ad4f38da6fe41b6b5e07bc38e]
+Aug-03 14:32:59.070 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Aug-03 14:32:59.076 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=buildDockerImage; work-dir=/workspace/Prot_Pipeline/Prot_Pipeline/work/e4/ba4a2ad4f38da6fe41b6b5e07bc38e
+  error [nextflow.exception.ProcessFailedException]: Process `buildDockerImage` terminated with an error exit status (1)
+Aug-03 14:32:59.171 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'buildDockerImage'
+
+Caused by:
+  Process `buildDockerImage` terminated with an error exit status (1)
+
+
+Command executed:
+
+  docker build -t blastp_image -f Dockerfile_blastp .
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  #0 building with "default" instance using docker driver
+  
+  #1 [internal] load .dockerignore
+  #1 transferring context: 2B done
+  #1 DONE 0.0s
+  
+  #2 [internal] load build definition from Dockerfile_blastp
+  #2 transferring dockerfile: 2B done
+  #2 DONE 0.0s
+  ERROR: failed to solve: failed to read dockerfile: open /workspace/.docker-root/tmp/buildkit-mount445531032/Dockerfile_blastp: no such file or directory
+
+Work dir:
+  /workspace/Prot_Pipeline/Prot_Pipeline/work/e4/ba4a2ad4f38da6fe41b6b5e07bc38e
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Aug-03 14:32:59.180 [main] DEBUG nextflow.Session - Session await > all processes finished
+Aug-03 14:32:59.183 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `buildDockerImage` terminated with an error exit status (1)
+Aug-03 14:32:59.245 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Aug-03 14:32:59.269 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Aug-03 14:32:59.280 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=277ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Aug-03 14:32:59.392 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Aug-03 14:32:59.485 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

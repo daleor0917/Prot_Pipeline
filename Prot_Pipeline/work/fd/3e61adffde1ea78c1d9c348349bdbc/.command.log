@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/workspace/Prot_Pipeline/Prot_Pipeline/scripts/create_blast_db.py", line 3, in <module>
+    from Bio.Blast.Applications import NcbimakeblastdbCommandline
+ModuleNotFoundError: No module named 'Bio'

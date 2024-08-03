@@ -1,0 +1,1 @@
+/workspace/Prot_Pipeline/input/secuencias_GH51.txt

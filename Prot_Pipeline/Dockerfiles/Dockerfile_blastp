@@ -1,0 +1,16 @@
+# Dockerfile_blastp
+FROM ubuntu:latest
+
+# Instala dependencias y BLAST
+RUN apt-get update && \
+    apt-get install -y wget bzip2 && \
+    wget https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.16.0+-x64-linux.tar.gz && \
+    tar -xzvf ncbi-blast-2.16.0+-x64-linux.tar.gz && \
+    mv ncbi-blast-2.16.0+/bin/* /usr/local/bin/ && \
+    rm -rf ncbi-blast-2.16.0+ ncbi-blast-2.16.0+-x64-linux.tar.gz
+
+# Establece el directorio de trabajo
+WORKDIR /data
+
+# Comando por defecto
+ENTRYPOINT ["blastp"]
